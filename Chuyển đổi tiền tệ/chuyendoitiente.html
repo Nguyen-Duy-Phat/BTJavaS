@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoitiente</title>
+    <link rel="stylesheet" href="chuyendoitiente.css">
+</head>
+<body>
+<div>
+    <form action="chuyendoitiente.html" method="get">
+    <table>
+        <tr>
+            <th class="te"><label for="input">Amount</label></th>
+            <th class="te"><label for="sl">From Currency</label></th>
+            <th class="te"><label for="sl1">To Currency</label></th>
+        </tr>
+        <tr>
+            <td>
+                <input id="input" type="number">
+            </td>
+            <td>
+                <select id="sl" name="money">
+                    <option value="22872.50" name="vnd">VND</option>
+                    <option value="1" name="usd">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="sl1" name="money1">
+                    <option value="22872.50" name="vnd">VND</option>
+                    <option value="1" name="usd">USD</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="convert()" type="button" id="convert">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td><p id="Result"></p></td>
+        </tr>
+    </table>
+    </form>
+</div>
+</body>
+<script src="chuyendoitiente.js"></script>
+</html>

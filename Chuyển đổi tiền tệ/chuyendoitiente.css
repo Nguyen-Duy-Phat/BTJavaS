@@ -1,0 +1,18 @@
+p{
+   color: blue;
+}
+table{
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+}
+#sl{
+   padding-right: 100px;
+}
+#sl1{
+    padding-right: 100px;
+}
+#convert{
+    background: blue;
+    color: white;
+}
