@@ -1,0 +1,26 @@
+.blue{
+    color: blue;
+}
+button{
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+table{
+    border: 3px solid black;
+}
+.kqpt{
+    width: 200px;
+}
+.td{
+    text-align: center;
+}
+th{
+    text-align: right;
+
+}
+p{
+    text-align: right;
+    height: 20px;
+    border: 1px solid gray;
+}
