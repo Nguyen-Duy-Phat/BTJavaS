@@ -3,40 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="mtdg.css">
+    <style>
+        table{
+            border: 1px solid black;
+            width: 600px;
+            text-align: center;
+        }
+        td {
+            width: 150px;
+        }
+        input {
+            width: 98%;
+            height: 80px;
+            font-size: 25px;
+        }
+
+        button {
+            width: 140px;
+            height: 140px;
+            -webkit-text-stroke-width: thick;
+            font-size: 70px;
+
+        }
+    </style>
+
 </head>
 <body>
-<div>
-    <table>
-        <tr>
-            <th colspan="4"><input type="number" id="kq"></th>
-        </tr>
-        <tr>
-            <td><button onclick="ikey(1)" class="blue" type="button" id="1" value="1">1</button></td>
-            <td><button onclick="ikey(2)" class="blue" type="button" id="2" value="2">2</button></td>
-            <td><button onclick="ikey(3)" class="blue" type="button" id="3" value="3">3</button></td>
-            <td><button onclick="ikey(+)" class="blue" type="button" id="+" value="+">+</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="ikey()" class="blue" type="button" id="4" value="4">4</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="5" value="5">5</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="6" value="6">6</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id=- value="-">-</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="ikey()" class="blue" type="button" id="7" value="7">7</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="8" value="8">8</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="9" value="9">9</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="*" value="*">*</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="kei" class="blue" type="button" id="C" value="C">☪</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="0" value="0">0</button></td>
-            <td><button onclick="kei" class="blue" type="button" id="=" value="=">=</button></td>
-            <td><button onclick="ikey()" class="blue" type="button" id="/" value="/">/</button></td>
-        </tr>
-    </table>
-</div>
+<table>
+    <tr>
+        <td colspan="4"  >
+            <input size="85" type="text" id="input">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <!--        <td><button onclick="(A)"><h1>A</h1></button></td>-->
+        <td></td>
+        <td><button onclick="clearTex()">CA</button></td>
+    </tr>
+    <tr>
+        <td><button  onclick="touch(1)">1</button></td>
+        <td><button  onclick="touch(2)">2</button></td>
+        <td><button  onclick="touch(3)">3</button></td>
+        <td><button  onclick="touch('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button  onclick="touch(4)">4</button></td>
+        <td><button  onclick="touch(5)">5</button></td>
+        <td><button  onclick="touch(6)">6</button></td>
+        <td><button  onclick="touch('*')">X</button></td>
+    </tr>
+    <tr>
+        <td><button  onclick="touch(7)">7</button></td>
+        <td><button  onclick="touch(8)">8</button></td>
+        <td><button  onclick="touch(9)">9</button></td>
+        <td><button  onclick="touch('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button  onclick="touch(0)">0</button></td>
+        <td><button  onclick="touch('.')">.</button></td>
+        <td><button  onclick="calculator()">=</button></td>
+        <td><button  onclick="touch('+')">+</button></td>
+    </tr>
+</table>
 </body>
 <script src="mtdg.js"></script>
 </html>
